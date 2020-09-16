@@ -1,15 +1,20 @@
 {
   "name": "walmark-shopping-webapp",
   "version": "0.1.0",
-  "description": "React component for walmark shopping ",
+  "description": "React component for Walmark shopping ",
   "main": "app.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "build-dev": "webpack --progress --config webpack.config.js",
     "start": "NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 3001 --watch",
     "test": "NODE_PATH=./src jest /*.spec.js",
     "test:watch": "NODE_PATH=./src jest --watch /*.spec.js",
     "lint": "eslint src test --ignore-path .eslintignore",
-    "lint:fix": "eslint src test --ignore-path .gitignore --fix"
+    "lint:fix": "eslint src test --ignore-path .gitignore --fix",
+    "docker:start": "npm run build | webpack-dev-server --host 0.0.0.0 --port $PORT --config ./webpack.config.js",
+    "docker:build": "docker build -t shopping-webapp ."
   },
   "repository": {
     "type": "git",
