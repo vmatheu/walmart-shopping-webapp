@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchProduct/> With search product by id should have the same ui structure 1`] = `
+<div
+  className="container"
+/>
+`;
