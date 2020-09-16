@@ -16,7 +16,8 @@ exports[`<SearchProduct/> With search product by id should have the same ui stru
   >
     <input
       className="form-control"
-      id="inputSearchById"
+      id="inputSearchId"
+      onChange={[Function]}
       style={
         Object {
           "width": "100%",
