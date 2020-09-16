@@ -2,7 +2,7 @@ import React from 'react';
 import productService from './services/productService';
 import Logger from 'core/services/Logger';
 
-export const onChange = async (search) => {
+export const onChange = (search) => {
   if((/^([0-9,a-z,A-Z]){1,}$/.test(search))) {
     Logger.debbug(`search init for ${search}`);
     const response = productService.getProductById(search);
