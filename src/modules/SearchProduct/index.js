@@ -1,10 +1,7 @@
 import React from 'react';
 
-const SearchProduct = () => {
-    return (
-      <div className="container">
-      </div>
+const SearchProduct = () => (
+  <div className="container" />
     );
-};
 
 export default SearchProduct;

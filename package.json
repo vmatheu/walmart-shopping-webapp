@@ -6,7 +6,9 @@
   "scripts": {
     "build-dev": "webpack --progress --config webpack.config.js",
     "start": "NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 3001 --watch",
-    "test": "NODE_PATH=./src jest /*.spec.js"
+    "test": "NODE_PATH=./src jest /*.spec.js",
+    "lint": "eslint src test --ignore-path .eslintignore",
+    "lint:fix": "eslint src test --ignore-path .gitignore --fix"
   },
   "repository": {
     "type": "git",
@@ -33,7 +35,13 @@
     "terser-webpack-plugin": "^1.2.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
