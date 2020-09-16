@@ -7,7 +7,6 @@ import { SearchProduct, onChange } from '..';
 jest.mock('../services/productService');
 
 describe('<SearchProduct/>', () => {
-
   describe('With search product by id', () => {
     it('should have the same ui structure', () => {
       const wrapper = shallow(<SearchProduct />);
