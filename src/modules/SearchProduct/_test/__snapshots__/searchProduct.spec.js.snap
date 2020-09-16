@@ -32,6 +32,10 @@ exports[`<SearchProduct/> With search product by id should have the same ui stru
         "marginTop": "20px",
       }
     }
-  />
+  >
+    <ProductList
+      products={Array []}
+    />
+  </div>
 </div>
 `;

@@ -21,15 +21,14 @@ describe('<SearchProduct/>', () => {
       productService.getProductById = jest.fn();
     });
 
-    it('should calling product service', () => {      
-      onChange("221");
+    it('should calling product service', async () => {
+      await onChange(111, jest.fn());
       expect(productService.getProductById).toHaveBeenCalled();
     });
 
-    it('should not calling product service when search contains not alphanumeric characters', () => {      
-      onChange("21-");
+    it('should not calling product service when search contains not alphanumeric characters', async () => {
+      await onChange('21-', jest.fn());
       expect(productService.getProductById).not.toHaveBeenCalled();
     });
   });
-
 });
