@@ -34,6 +34,7 @@ module.exports = {
     inline: true,
     port: PORT,
     hot: true,
+    allowedHosts: ['walmark-shopping-webapp.herokuapp.com', 'localhost'],
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
