@@ -1,5 +1,5 @@
 import React from 'react';
-import { SearchProduct } from 'modules/SearchProduct';
+import { SearchProduct } from 'components/SearchProduct';
 
 const App = () => (
   <div className="container">

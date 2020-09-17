@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import ProductList from 'modules/ProductList';
-import Logger from 'core/services/Logger';
+import ProductList from 'components/ProductList';
 import productService from './services/productService';
 
 export const onChange = async (search, setProducts) => {
-  setProducts({ products: [] });
+  setProducts({ products: [], loading: 'visible' });
   if ((/^([0-9,a-z,A-Z]){1,}$/.test(search))) {
-    Logger.debbug(`search init for ${search}`);
     const data = await productService.findProductBySearch(search);
-    setProducts({ products: data });
+    setProducts({ products: data, loading: 'hidden' });
+  } else {
+    setProducts({ products: [], loading: 'hidden' });
   }
 };
 
 export const SearchProduct = () => {
-  const [data, setProducts] = useState({ products: [] });
+  const [data, setProducts] = useState({ products: [], loading: 'hidden' });
 
   return (<div className="container">
     <div className="row col-sm-12 col-md-5 ">

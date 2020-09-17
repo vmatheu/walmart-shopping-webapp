@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'walmark-shopping-webapp.js'
+    filename: 'walmark-shopping-webapp.js',
   },
   devtool: 'source-map',
   resolve: {
@@ -23,11 +23,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-react']
-          }
-        }
-      }
-    ]
+            presets: ['@babel/preset-react'],
+          },
+        },
+      },
+    ],
   },
   devServer: {
     compress: true,
@@ -44,7 +44,7 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
-      template: `${__dirname}/index.html`,
+      template: `${__dirname}/public/index.html`,
     }),
-  ]
-}
+  ],
+};

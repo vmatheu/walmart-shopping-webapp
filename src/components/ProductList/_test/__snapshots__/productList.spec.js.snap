@@ -7,6 +7,11 @@ exports[`<ProductList/> should be list product should have the same ui structure
   <div
     className="ard mb-4 shadow-sm"
     key="1"
+    style={
+      Object {
+        "margin": "0 0 10px 10px",
+      }
+    }
   >
     <div
       className="card-header"
@@ -38,6 +43,11 @@ exports[`<ProductList/> should be list product should have the same ui structure
   <div
     className="ard mb-4 shadow-sm"
     key="2"
+    style={
+      Object {
+        "margin": "0 0 10px 10px",
+      }
+    }
   >
     <div
       className="card-header"
@@ -69,6 +79,11 @@ exports[`<ProductList/> should be list product should have the same ui structure
   <div
     className="ard mb-4 shadow-sm"
     key="3"
+    style={
+      Object {
+        "margin": "0 0 10px 10px",
+      }
+    }
   >
     <div
       className="card-header"
@@ -100,6 +115,11 @@ exports[`<ProductList/> should be list product should have the same ui structure
   <div
     className="ard mb-4 shadow-sm"
     key="4"
+    style={
+      Object {
+        "margin": "0 0 10px 10px",
+      }
+    }
   >
     <div
       className="card-header"
@@ -131,6 +151,11 @@ exports[`<ProductList/> should be list product should have the same ui structure
   <div
     className="ard mb-4 shadow-sm"
     key="5"
+    style={
+      Object {
+        "margin": "0 0 10px 10px",
+      }
+    }
   >
     <div
       className="card-header"
@@ -169,6 +194,11 @@ exports[`<ProductList/> should be list product should have the same ui structure
   <div
     className="ard mb-4 shadow-sm"
     key="1"
+    style={
+      Object {
+        "margin": "0 0 10px 10px",
+      }
+    }
   >
     <div
       className="card-header"

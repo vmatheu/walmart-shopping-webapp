@@ -5,8 +5,12 @@ import { PRODUCT_SERVICE_ENDPOINT } from '../constants';
 export const findProductBySearch = async (search) => {
   debbug(`product id for get endpoint is ${search}`);
   debbug(`Url calling is ${PRODUCT_SERVICE_ENDPOINT}`);
-  const response = await axios.get(`${PRODUCT_SERVICE_ENDPOINT}${search}`);
-  return response.data;
+
+  const data = await axios.get(`${PRODUCT_SERVICE_ENDPOINT}${search}`)
+    .then(response => (response.data))
+    .catch(error => ([]));
+
+  return data;
 };
 
 export default { findProductBySearch };
