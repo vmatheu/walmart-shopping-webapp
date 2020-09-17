@@ -7,8 +7,8 @@ export const onChange = async (search, setProducts) => {
   setProducts({ products: [] });
   if ((/^([0-9,a-z,A-Z]){1,}$/.test(search))) {
     Logger.debbug(`search init for ${search}`);
-    const data = await productService.getProductById(search);
-    setProducts({ products: [data] });
+    const data = await productService.findProductBySearch(search);
+    setProducts({ products: data });
   }
 };
 
