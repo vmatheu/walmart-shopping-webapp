@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProductList from 'components/ProductList';
 import productService from './services/productService';
+import './style.css';
 
 export const onChange = async (search, setProducts) => {
   setProducts({ products: [], loading: 'visible' });
@@ -22,12 +23,11 @@ export const SearchProduct = () => {
     <div className="row col-sm-12 col-md-5">
       <input
         id="inputSearchId"
-        className="form-control"
-        style={{ width: '100%' }}
+        className="form-control walmark-input-search"
         onChange={() => onChange(inputSearchId.value, setProducts)}
       />
     </div>
-    <div className="container" style={{ marginTop: '20px' }}>
+    <div className="container walmark-container-productList">
       <ProductList products={data.products} />
     </div>
   </div>);

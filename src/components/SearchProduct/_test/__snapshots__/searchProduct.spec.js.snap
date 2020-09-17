@@ -15,23 +15,13 @@ exports[`<SearchProduct/> With search product by id should have the same ui stru
     className="row col-sm-12 col-md-5"
   >
     <input
-      className="form-control"
+      className="form-control walmark-input-search"
       id="inputSearchId"
       onChange={[Function]}
-      style={
-        Object {
-          "width": "100%",
-        }
-      }
     />
   </div>
   <div
-    className="container"
-    style={
-      Object {
-        "marginTop": "20px",
-      }
-    }
+    className="container walmark-container-productList"
   >
     <ProductList
       products={Array []}
