@@ -10,8 +10,14 @@ const ProductList = ({ products }) => (
         </div>
 
         <div className="card-body">
-          <h1 className="card-title pricing-card-title">${product.price}</h1>
+          { product.priceHaveDiscount ?
+            <p className="card-title pricing-card-title">
+              <h3> ${product.price} <span style={{ color: 'red' }}>50%</span></h3>
+              <h5 style={{ 'text-decoration': 'line-through', color: 'grey' }}> ${product.priceWithOutDiscount} </h5>
+            </p>
+          : <h3 className="card-title pricing-card-title">${product.price}</h3>}
           <img alt={`imagen del producto ${product.description}`} src={`http://${product.image}`} />
+          <h6>{product.brand}</h6>
         </div>
       </div>
     ))}
