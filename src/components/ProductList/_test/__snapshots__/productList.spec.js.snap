@@ -5,13 +5,8 @@ exports[`<ProductList/> should be list product should have the same ui structure
   className="card-deck mb-3 text-center"
 >
   <div
-    className="ard mb-4 shadow-sm"
+    className="ard mb-4 shadow-sm walmark-card"
     key="1"
-    style={
-      Object {
-        "margin": "0 0 10px 10px",
-      }
-    }
   >
     <div
       className="card-header"
@@ -41,13 +36,8 @@ exports[`<ProductList/> should be list product should have the same ui structure
     </div>
   </div>
   <div
-    className="ard mb-4 shadow-sm"
+    className="ard mb-4 shadow-sm walmark-card"
     key="2"
-    style={
-      Object {
-        "margin": "0 0 10px 10px",
-      }
-    }
   >
     <div
       className="card-header"
@@ -77,13 +67,8 @@ exports[`<ProductList/> should be list product should have the same ui structure
     </div>
   </div>
   <div
-    className="ard mb-4 shadow-sm"
+    className="ard mb-4 shadow-sm walmark-card"
     key="3"
-    style={
-      Object {
-        "margin": "0 0 10px 10px",
-      }
-    }
   >
     <div
       className="card-header"
@@ -113,13 +98,8 @@ exports[`<ProductList/> should be list product should have the same ui structure
     </div>
   </div>
   <div
-    className="ard mb-4 shadow-sm"
+    className="ard mb-4 shadow-sm walmark-card"
     key="4"
-    style={
-      Object {
-        "margin": "0 0 10px 10px",
-      }
-    }
   >
     <div
       className="card-header"
@@ -149,13 +129,8 @@ exports[`<ProductList/> should be list product should have the same ui structure
     </div>
   </div>
   <div
-    className="ard mb-4 shadow-sm"
+    className="ard mb-4 shadow-sm walmark-card"
     key="5"
-    style={
-      Object {
-        "margin": "0 0 10px 10px",
-      }
-    }
   >
     <div
       className="card-header"
@@ -192,13 +167,8 @@ exports[`<ProductList/> should be list product should have the same ui structure
   className="card-deck mb-3 text-center"
 >
   <div
-    className="ard mb-4 shadow-sm"
+    className="ard mb-4 shadow-sm walmark-card"
     key="1"
-    style={
-      Object {
-        "margin": "0 0 10px 10px",
-      }
-    }
   >
     <div
       className="card-header"

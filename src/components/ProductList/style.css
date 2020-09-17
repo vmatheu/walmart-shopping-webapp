@@ -1,0 +1,12 @@
+.walmark-card {
+    margin: 0 0 10px 10px;
+}
+
+.walmark-discount {
+    color: red;
+}
+
+.walmark-discount-price {
+    text-decoration: line-through;
+    color: grey;
+}
