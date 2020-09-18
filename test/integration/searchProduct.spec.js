@@ -6,9 +6,14 @@ import ProductList from 'components/ProductList';
 import Loading from 'components/Loading';
 
 describe('SearchProduct Component', () => {
-  it('should have SearchProduct descendantes', () => {
+  it('should have Loding descendant', () => {
     const searchProduct = mount(<SearchProduct />);
     expect(searchProduct).to.have.descendants(ProductList);
+    expect(searchProduct).to.have.descendants(Loading);
+  });
+
+  it('should have Loding descendant', () => {
+    const searchProduct = mount(<SearchProduct />);
     expect(searchProduct).to.have.descendants(Loading);
   });
 });
