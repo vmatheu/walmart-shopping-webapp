@@ -26,7 +26,7 @@ describe('<SearchProduct/>', () => {
     });
 
     it('should calling product service when use ñ character', async () => {
-      await onChange('ñ', jest.fn());
+      await onChange('aañ', jest.fn());
       expect(productService.findProductBySearch).toHaveBeenCalled();
     });
 
@@ -38,6 +38,16 @@ describe('<SearchProduct/>', () => {
     it('should calling product service with lower case character', async () => {
       await onChange('AAA', jest.fn());
       expect(productService.findProductBySearch).toHaveBeenCalledWith('aaa');
+    });
+
+    it('should not calling product service when search contains alphanumeric characters but lenght is less than three', async () => {
+      await onChange('1a', jest.fn());
+      expect(productService.findProductBySearch).not.toHaveBeenCalled();
+    });
+
+    it('should calling product service when search contains only numbers', async () => {
+      await onChange('1', jest.fn());
+      expect(productService.findProductBySearch).toHaveBeenCalled();
     });
   });
 });

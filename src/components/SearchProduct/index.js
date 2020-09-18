@@ -4,8 +4,21 @@ import Loading from 'components/Loading';
 import productService from './services/productService';
 import './style.css';
 
+const onlyHaveNumber = (search) => ((/^([0-9]){1,}$/.test(search)));
+const onlyHaveLetter = (search) => ((/^([a-z,A-Z,ñ]){3,}$/.test(search)));
+const haveLetterAndNumber = (search) => ((/^([0-9,a-z,A-Z,ñ]){3,}$/.test(search)));
+
+const validateSearch = (search) => {
+  if (onlyHaveLetter(search)) {
+    return true;
+  } else if (onlyHaveNumber(search)) {
+    return true;
+  }
+  return haveLetterAndNumber(search);
+};
+
 export const onChange = async (search, setProducts) => {
-  if ((/^([0-9,a-z,A-Z,ñ]){1,}$/.test(search))) {
+  if (validateSearch(search)) {
     setProducts({ products: [], loading: true });
     const data = await productService.findProductBySearch(search.toLowerCase());
     setProducts({ products: data, loading: false });
