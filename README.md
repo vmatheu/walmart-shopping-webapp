@@ -42,7 +42,7 @@ entonces necesitas tener acceso a internet para buscar productos.
       con estas pruebas. Estas pruebas tambien levantan en el puerto 8882 el servicio api/walmart/v1/product/filter/ 
       para buscar los productos que estan definidos en test/stubs.
 
-4. Para correr las pruebas integrales y unitarias juntas en tu local
+4. Para correr las pruebas juntas en tu local
     ```
     $ npm test
     ```
