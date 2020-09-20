@@ -6,7 +6,8 @@
   },
   "globals": {
     "browser": true,
-    "process": true
+    "process": true,
+    "cy": true
   },
   "plugins": [
     "react",

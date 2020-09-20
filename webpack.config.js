@@ -34,6 +34,11 @@ module.exports = {
     ],
   },
   devServer: {
+    proxy: {
+      '/api/**': {
+        target: 'http://localhost:8882',
+      },
+    },
     compress: true,
     inline: true,
     port: PORT,

@@ -30,7 +30,12 @@ entonces necesitas tener acceso a internet para buscar productos.
     $ npm test:integration
     ```
 
-3. Para correr todas las pruebas juntas en tu local
+3. Para correr las pruebas funcionales en tu local
+    ```
+    $ npm test:functional
+    ```
+
+4. Para correr las pruebas integrales y unitarias juntas en tu local
     ```
     $ npm test
     ```
