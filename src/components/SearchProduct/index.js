@@ -31,15 +31,15 @@ export const SearchProduct = () => {
       <div className="col-xs-12 col-md-5">
         <input
           id="inputSearchId"
-          className="form-control walmark-input-search"
+          className="form-control walmark-search-product-input-search"
           onChange={() => onChange(inputSearchId.value, setProducts)}
         />
       </div>
     </div>
     <div className="row">
-      <div className="walmark-input-search-bar-space" />
+      <div className="walmark-search-product-bar-space" />
     </div>
-    <div className="container walmark-container-productList">
+    <div className="container walmark-search-product-productList">
       <ProductList products={data.products} />
     </div>
   </div>);

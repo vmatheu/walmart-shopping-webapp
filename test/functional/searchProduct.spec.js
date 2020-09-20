@@ -13,7 +13,7 @@ describe('App Functinal', () => {
     cy.get('.card-body').should('exist');
     cy.get('.card-header').should('exist');
     cy.get('.pricing-card-title').should('exist');
-    cy.get('.walmark-discount').should('exist');
+    cy.get('.walmark-product-card-discount').should('exist');
   });
 
   it('should be product without discount element when search is not palindrome"', () => {
@@ -23,7 +23,7 @@ describe('App Functinal', () => {
     cy.get('.card-body').should('exist');
     cy.get('.card-header').should('exist');
     cy.get('.pricing-card-title').should('exist');
-    cy.get('.walmark-discount').should('not.exist');
+    cy.get('.walmark-product-card-discount').should('not.exist');
   });
 
   it('should be not render product when input search is not valid"', () => {

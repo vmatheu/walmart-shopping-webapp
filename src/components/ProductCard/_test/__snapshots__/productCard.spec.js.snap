@@ -2,7 +2,7 @@
 
 exports[`<ProductCard/> should be product card should have the same ui structure with one product 1`] = `
 <div
-  className="ard mb-4 shadow-sm walmark-card"
+  className="ard mb-4 shadow-sm walmark-product-card"
 >
   <div
     className="card-header"
