@@ -4,161 +4,56 @@ exports[`<ProductList/> should be list product should have the same ui structure
 <div
   className="card-deck mb-3 text-center"
 >
-  <div
-    className="ard mb-4 shadow-sm walmark-card"
+  <ProductCard
+    brand="coca cola"
+    description="bebida"
+    id={1}
+    image="uriimage"
     key="1"
-  >
-    <div
-      className="card-header"
-    >
-      <h4
-        className="my-0 font-weight-normal"
-      >
-        bebida
-      </h4>
-    </div>
-    <div
-      className="card-body"
-    >
-      <h3
-        className="card-title pricing-card-title"
-      >
-        $
-        $10
-      </h3>
-      <img
-        alt="imagen del producto bebida"
-        src="http://uriimage"
-      />
-      <h6>
-        coca cola
-      </h6>
-    </div>
-  </div>
-  <div
-    className="ard mb-4 shadow-sm walmark-card"
+    price={10}
+    priceHaveDiscount={false}
+    priceWithOutDiscount={0}
+  />
+  <ProductCard
+    brand="pepsi"
+    description="bebida"
+    id={2}
+    image="uriimage1"
     key="2"
-  >
-    <div
-      className="card-header"
-    >
-      <h4
-        className="my-0 font-weight-normal"
-      >
-        bebida
-      </h4>
-    </div>
-    <div
-      className="card-body"
-    >
-      <h3
-        className="card-title pricing-card-title"
-      >
-        $
-        $10
-      </h3>
-      <img
-        alt="imagen del producto bebida"
-        src="http://uriimage1"
-      />
-      <h6>
-        pepsi
-      </h6>
-    </div>
-  </div>
-  <div
-    className="ard mb-4 shadow-sm walmark-card"
+    price={10}
+    priceHaveDiscount={false}
+    priceWithOutDiscount={0}
+  />
+  <ProductCard
+    brand="fanta"
+    description="bebida"
+    id={3}
+    image="uriimage2"
     key="3"
-  >
-    <div
-      className="card-header"
-    >
-      <h4
-        className="my-0 font-weight-normal"
-      >
-        bebida
-      </h4>
-    </div>
-    <div
-      className="card-body"
-    >
-      <h3
-        className="card-title pricing-card-title"
-      >
-        $
-        $10
-      </h3>
-      <img
-        alt="imagen del producto bebida"
-        src="http://uriimage2"
-      />
-      <h6>
-        fanta
-      </h6>
-    </div>
-  </div>
-  <div
-    className="ard mb-4 shadow-sm walmark-card"
+    price={10}
+    priceHaveDiscount={false}
+    priceWithOutDiscount={0}
+  />
+  <ProductCard
+    brand="sprite"
+    description="bebida"
+    id={4}
+    image="uriimage3"
     key="4"
-  >
-    <div
-      className="card-header"
-    >
-      <h4
-        className="my-0 font-weight-normal"
-      >
-        bebida
-      </h4>
-    </div>
-    <div
-      className="card-body"
-    >
-      <h3
-        className="card-title pricing-card-title"
-      >
-        $
-        $10
-      </h3>
-      <img
-        alt="imagen del producto bebida"
-        src="http://uriimage3"
-      />
-      <h6>
-        sprite
-      </h6>
-    </div>
-  </div>
-  <div
-    className="ard mb-4 shadow-sm walmark-card"
+    price={10}
+    priceHaveDiscount={false}
+    priceWithOutDiscount={0}
+  />
+  <ProductCard
+    brand="bilz"
+    description="bebida"
+    id={5}
+    image="uriimage4"
     key="5"
-  >
-    <div
-      className="card-header"
-    >
-      <h4
-        className="my-0 font-weight-normal"
-      >
-        bebida
-      </h4>
-    </div>
-    <div
-      className="card-body"
-    >
-      <h3
-        className="card-title pricing-card-title"
-      >
-        $
-        $10
-      </h3>
-      <img
-        alt="imagen del producto bebida"
-        src="http://uriimage4"
-      />
-      <h6>
-        bilz
-      </h6>
-    </div>
-  </div>
+    price={10}
+    priceHaveDiscount={false}
+    priceWithOutDiscount={0}
+  />
 </div>
 `;
 
@@ -166,36 +61,15 @@ exports[`<ProductList/> should be list product should have the same ui structure
 <div
   className="card-deck mb-3 text-center"
 >
-  <div
-    className="ard mb-4 shadow-sm walmark-card"
+  <ProductCard
+    brand="coca cola"
+    description="bebida"
+    id={1}
+    image="uriimage"
     key="1"
-  >
-    <div
-      className="card-header"
-    >
-      <h4
-        className="my-0 font-weight-normal"
-      >
-        bebida
-      </h4>
-    </div>
-    <div
-      className="card-body"
-    >
-      <h3
-        className="card-title pricing-card-title"
-      >
-        $
-        $10
-      </h3>
-      <img
-        alt="imagen del producto bebida"
-        src="http://uriimage"
-      />
-      <h6>
-        coca cola
-      </h6>
-    </div>
-  </div>
+    price={10}
+    priceHaveDiscount={false}
+    priceWithOutDiscount={0}
+  />
 </div>
 `;
