@@ -4,7 +4,6 @@ import axios from 'axios';
 jest.mock('axios');
 
 describe('ProductService ', () => {
-
   beforeEach(() => {
     axios.get = jest.fn(() => Promise.resolve());
   });

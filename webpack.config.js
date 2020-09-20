@@ -54,6 +54,7 @@ module.exports = {
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       template: `${__dirname}/public/index.html`,
+      environment: process.env.NODE_ENV || 'production',
     }),
   ],
 };

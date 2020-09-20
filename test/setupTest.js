@@ -1,6 +1,6 @@
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import chai from 'chai'
+import chai from 'chai';
 import chaiEnzyme from 'chai-enzyme';
 import sinonChai from 'sinon-chai';
 
@@ -10,6 +10,10 @@ chai.use(chaiEnzyme());
 chai.use(sinonChai);
 
 const { expect } = chai;
+
+global.WALMARTSHOPPING = {
+  Environment: 'development',
+};
 
 export {
   expect,

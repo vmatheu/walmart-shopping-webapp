@@ -9,8 +9,8 @@
   "scripts": {
     "build-dev": "webpack --progress --config webpack.config.js",
     "start": "NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 3001 --watch",
-    "start:stub": "npm run stubby | NODE_ENV=development webpack-dev-server --host 0.0.0.0 --port 3002 --config ./webpack.config.js",
-    "test": "NODE_PATH=./src jest /*.spec.js",
+    "start:stub": "npm run stubby | NODE_ENV=funtional_test webpack-dev-server --host 0.0.0.0 --port 3002 --config ./webpack.config.js",
+    "test": "npm run test:unit && npm run test:integration && npm run test:functional",
     "test:unit": "NODE_PATH=./src jest /src.*.spec.js",
     "test:integration": "NODE_PATH=./src jest /test/integration.*.spec.js",
     "test:functional": "concurrently --kill-others --success first --names 'server,cypress' 'npm run start:stub' 'cypress run --config integrationFolder=test/functional'",
@@ -18,7 +18,7 @@
     "test:coverage": "NODE_PATH=./src jest /src.*.spec.js --coverage",
     "lint": "eslint src test --ignore-path .eslintignore",
     "lint:fix": "eslint src test --ignore-path .gitignore --fix",
-    "heruko:start": "npm run build | webpack-dev-server --host 0.0.0.0 --port $PORT --config ./webpack.dist.config.js",
+    "heruko:start": "npm run build | NODE_ENV=production webpack-dev-server --host 0.0.0.0 --port $PORT --config ./webpack.dist.config.js",
     "stubby": "stubby -t 7444 -a 8888 --watch --data test/stubs/stubby.json"
   },
   "repository": {
