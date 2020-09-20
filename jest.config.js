@@ -8,14 +8,14 @@ module.exports = {
   testEnvironment: 'jsdom',
   coverageThreshold: {
     global: {
-      branches: 81,
-      functions: 84,
-      lines: 91,
-      statements: 90,
+      branches: 85,
+      functions: 85,
+      lines: 85,
+      statements: 85,
     },
   },
   coverageReporters: ['json', 'html'],
   coveragePathIgnorePatterns: ['/node_modules/', '/src/store/'],
   setupFiles: ['<rootDir>/test/setupTest.js'],
-  transformIgnorePatterns: ['/node_modules/(?!(lodash-es)/)']
+  transformIgnorePatterns: ['/node_modules/(?!(lodash-es)/)'],
 };
