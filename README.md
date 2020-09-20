@@ -24,6 +24,10 @@ entonces necesitas tener acceso a internet para buscar productos.
     ```
     $ npm test:unit
     ```
+1. Para correr las pruebas unitarias validando la covertura en tu local
+    ```
+    $ npm test:coverage
+    ```
 
 2. Para correr las pruebas integrales en tu local
     ```
