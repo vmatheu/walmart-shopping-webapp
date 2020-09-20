@@ -34,8 +34,18 @@ entonces necesitas tener acceso a internet para buscar productos.
     ```
     $ npm test:functional
     ```
+      > Nota: las pruebas corren con Cypress donde se conecta al server en en puerto 3002 que se levanta junto
+      con estas pruebas. Estas pruebas tambien levantan en el puerto 8882 el servicio api/walmart/v1/product/filter/ 
+      para buscar los productos que estan definidos en test/stubs.
 
 4. Para correr las pruebas integrales y unitarias juntas en tu local
     ```
     $ npm test
     ```
+### Dependencias
+1. React (libreria para construir interfaces)
+2. Babel (libreria que nos ayuda a transformar nuestro Javascript a un Javascript compatible con los navegadores)
+3. Jest, Chai y Enzyme (libreria que nos ayuda a realizar nuestras pruebas)
+4. Cypress (Herramienta para nuestras pruebas funcionales)
+5. Axios (librerias que nos ayuda a relizar nuestras peticiones http a nuestra api)
+6. ESLint (Herramienta que nos ayuda a verificar nuestros patrones de codificacion )
