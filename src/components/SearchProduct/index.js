@@ -5,7 +5,7 @@ import productService from './services/productService';
 import './style.css';
 
 const onlyHaveNumber = (search) => ((/^([0-9]){1,}$/.test(search)));
-const haveLetterAndNumber = (search) => ((/^([0-9,a-z,A-Z,ñ]){3,}$/.test(search)));
+const haveLetterAndNumber = (search) => ((/^([0-9,a-z,A-Z,ñ]){4,}$/.test(search)));
 const validateSearch = (search) => (haveLetterAndNumber(search) || onlyHaveNumber(search));
 
 export const onChange = async (search, setProducts) => {
