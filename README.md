@@ -1,4 +1,4 @@
-# walmark-shopping-webapp
+# walmart-shopping-webapp
 Walmart Shopping Webapp nos permite buscar productos por id, brand o description.
 En caso que la busqueda sea un palindrome retorna el precio con un 50% de descuento.
 Y solo buscara por brad o descripcion cuando el largo de busqueda se mayor que 3.
