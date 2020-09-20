@@ -36,6 +36,9 @@ export const SearchProduct = () => {
         />
       </div>
     </div>
+    <div className="row">
+      <div className="walmark-input-search-bar-space" />
+    </div>
     <div className="container walmark-container-productList">
       <ProductList products={data.products} />
     </div>
