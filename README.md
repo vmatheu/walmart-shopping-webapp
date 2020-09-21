@@ -20,21 +20,21 @@ entonces necesitas tener acceso a internet para buscar productos.
     
 ### Pruebas
 
-1. Para correr las pruebas unitarias en tu local
+1. Para correr las pruebas unitarias.
     ```
     $ npm test:unit
     ```
-1. Para correr las pruebas unitarias validando la covertura en tu local
+1. Para correr las pruebas unitarias validando la covertura.
     ```
     $ npm test:coverage
     ```
 
-2. Para correr las pruebas integrales en tu local
+2. Para correr las pruebas integrales.
     ```
     $ npm test:integration
     ```
 
-3. Para correr las pruebas funcionales en tu local
+3. Para correr las pruebas funcionales.
     ```
     $ npm test:functional
     ```
@@ -42,7 +42,7 @@ entonces necesitas tener acceso a internet para buscar productos.
       con estas pruebas. Estas pruebas tambien levantan en el puerto 8882 el servicio api/walmart/v1/product/filter/ 
       para buscar los productos que estan definidos en test/stubs.
 
-4. Para correr las pruebas juntas en tu local
+4. Para correr todas las pruebas juntas.
     ```
     $ npm test
     ```
