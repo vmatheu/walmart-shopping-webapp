@@ -3,7 +3,8 @@
 }
 
 .walmark-product-card-discount {
-    color: red;
+    color: white;
+    background-color: red;
 }
 
 .walmark-product-card-discount-price {
