@@ -8,6 +8,8 @@ entonces necesitas tener acceso a internet para buscar productos.
 
 ### Operaciones
 
+0. Para los siguientes paso asegura que tengas la version de nodejs > que 10v, esto para poder utilizar cypress.
+
 1. Para instalar dependencias
     ```
     $ npm install
@@ -53,3 +55,4 @@ entonces necesitas tener acceso a internet para buscar productos.
 4. Cypress (Herramienta para nuestras pruebas funcionales)
 5. Axios (librerias que nos ayuda a relizar nuestras peticiones http a nuestra api)
 6. ESLint (Herramienta que nos ayuda a verificar nuestros patrones de codificacion )
+7. Nodejs
